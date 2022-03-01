@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud"
+    tools:context=".Kitchen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <RelativeLayout
+            android:id="@+id/bar_kit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/btn_back_main"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:onClick="backMain3"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="PHÒNG BẾP"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/main_kit"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_below="@+id/bar_kit"
+            android:background="@drawable/bgliv_bg">
+            <ImageView
+                android:id="@+id/bulb_kit"
+                android:layout_width="142dp"
+                android:layout_height="147dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="64dp"
+                android:src="@drawable/bulbofff" />
+
+            <ToggleButton
+
+                android:id="@+id/btn_blub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="115dp"
+                android:textOff="Bật"
+                android:textOn="Tắt"
+                android:background="@drawable/btnup_bg">
+
+            </ToggleButton>
+
+            <ImageView
+                android:id="@+id/fan_kit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bulb_kit"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="106dp"
+                android:src="@drawable/fanoff" />
+
+            <ToggleButton
+                android:id="@+id/btn_fan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_blub"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="191dp"
+                android:textOff="Bật"
+                android:textOn="Tắt"
+                android:background="@drawable/btndw_bg">
+
+            </ToggleButton>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

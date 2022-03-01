@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BedRoomActivity"
+    android:background="@drawable/backgroud">
+
+
+    <RelativeLayout
+        android:id="@+id/bar_bed"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/btn_back_main"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:onClick="backMain2"
+            android:src="@drawable/back" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="  PHÒNG NGỦ"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_bed"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@+id/bar_bed"
+        android:background="@drawable/bgliv_bg">
+
+        <ImageView
+            android:id="@+id/bulb_bed"
+            android:layout_width="142dp"
+            android:layout_height="147dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="64dp"
+            android:src="@drawable/bulbofff" />
+
+        <ToggleButton
+
+            android:id="@+id/btn_blub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="125dp"
+            android:background="@drawable/btnup_bg"
+            android:textOff="Bật"
+            android:textOn="Tắt">
+
+        </ToggleButton>
+
+        <ImageView
+            android:id="@+id/fan_bed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bulb_bed"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="61dp"
+            android:src="@drawable/fanoff" />
+
+        <ToggleButton
+            android:id="@+id/btn_fan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_blub"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/btndw_bg"
+            android:textOff="Bật"
+            android:textOn="Tắt"></ToggleButton>
+
+    </RelativeLayout>
+
+</RelativeLayout>

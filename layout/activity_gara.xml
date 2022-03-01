@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud"
+    tools:context=".Gara">
+    <RelativeLayout
+        android:id="@+id/bar_gara"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-16dp">
+
+        <ImageView
+            android:id="@+id/btn_back_main"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:onClick="backMain6"
+            android:src="@drawable/back"
+            tools:ignore="OnClick" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="  NHÀ ĐỂ XE"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/main_gara"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_below="@+id/bar_gara"
+        app:layout_constraintTop_toBottomOf="@+id/bar_gara"
+        android:background="@drawable/bgliv_bg">
+
+        <ImageView
+            android:id="@+id/door_gara"
+            android:layout_width="142dp"
+            android:layout_height="147dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="64dp"
+            android:src="@drawable/garaup" />
+
+        <Button
+            android:id="@+id/btn_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="68dp"
+            android:text="Down" />
+
+        <Button
+            android:id="@+id/btn_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_down"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="34dp"
+            android:text="Up"></Button>
+
+        <ImageView
+            android:id="@+id/bulb_gara"
+            android:layout_width="151dp"
+            android:layout_height="156dp"
+            android:layout_below="@+id/door_gara"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="106dp"
+            android:src="@drawable/bulbofff" />
+
+        <ToggleButton
+            android:id="@+id/btn_blubgara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_up"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="190dp"
+            android:textOff="Bật"
+            android:textOn="Tắt"
+            android:background="@drawable/btnup_bg">
+
+        </ToggleButton>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LivingRoomActivity"
+    android:background="@drawable/backgroud">
+
+    <RelativeLayout
+        android:id="@+id/bar_living"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/btn_back_main"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:onClick="backMain1"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="PHÒNG KHÁCH"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_living"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_below="@+id/bar_living"
+        android:background="@drawable/bgliv_bg">
+
+        <ImageView
+            android:id="@+id/bulb_living"
+            android:layout_width="131dp"
+            android:layout_height="117dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/bulbofff"></ImageView>
+
+        <ToggleButton
+
+            android:id="@+id/btn_blub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="78dp"
+            android:background="@drawable/btnup_bg"
+            android:textOff="Bật"
+            android:textOn="Tắt">>
+
+        </ToggleButton>
+
+        <ImageView
+            android:id="@+id/fan_living"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bulb_living"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="78dp"
+            android:src="@drawable/fanoff"></ImageView>
+
+        <ToggleButton
+            android:id="@+id/btn_fan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_blub"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="138dp"
+            android:background="@drawable/btndw_bg"
+            android:textOff="Bật"
+            android:textOn="Tắt">>
+
+        </ToggleButton>
+
+        <ImageView
+            android:id="@+id/door_living"
+            android:layout_width="127dp"
+            android:layout_height="154dp"
+            android:layout_below="@+id/fan_living"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="46dp"
+            android:src="@drawable/closedoor"></ImageView>
+
+        <ToggleButton
+            android:id="@+id/btn_lockliving"
+            android:layout_width="92dp"
+            android:layout_height="74dp"
+            android:layout_below="@+id/btn_fan"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="146dp"
+            android:background="@drawable/unlock"
+            android:textOff="Mở"
+            android:textOn="Bật">
+
+        </ToggleButton>
+    </RelativeLayout>
+
+
+</RelativeLayout>
